@@ -8,8 +8,7 @@ class Titulo
         public readonly string $nome, 
         public readonly int $anoLancamento, 
         public readonly Genero $genero,
-        )
-    {
+    ) {
        $this->notas = [];
     }
 
@@ -22,5 +21,10 @@ class Titulo
         $quantidadesNotas = count($this->notas);
 
         return $somaDasNotas / $quantidadesNotas;
+    }
+
+    public function duracaoEmMinutos(): int
+    {
+        return 0;
     }
 }
