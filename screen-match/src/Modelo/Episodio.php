@@ -1,25 +1,15 @@
 <?php
 
+namespace ScreenMatch\Modelo;
+
 class Episodio implements Avaliavel
 {
-    private array $notas;
+    use ComAvaliacao;
  
     public function __construct(
         public readonly Serie $serie,
         public readonly string $nome,
         public readonly int $numero
     ){
-       $this->notas = [];
-    }
-
-    public function avalia(float $nota): void{
-    $this->notas[] = $nota;
-    }
-
-    public function media(): float{
-        $somaDasNotas = array_sum($this->notas);
-        $quantidadesNotas = count($this->notas);
-
-        return $somaDasNotas / $quantidadesNotas;
     }
 }
