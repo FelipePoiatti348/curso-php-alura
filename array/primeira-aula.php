@@ -1,9 +1,9 @@
 <?php
 
 $array = [
+    0 => 'zero',
     1 => 'um',
-    2 => 'dois',
-    3 => 'tres'
+    2 => 'dois'
 ];
 
 foreach ($array as $numeral => $nomeNumero) {
@@ -11,3 +11,5 @@ foreach ($array as $numeral => $nomeNumero) {
 }
 
 echo  "Total: " . count($array) . PHP_EOL;
+
+var_dump (array_is_list($array));
