@@ -25,6 +25,7 @@ $numero = (float) fgets(STDIN);
             echo "Saldo atual : R$ $saldo\n";
             echo "******************\n";
     break;
+
     case 2: 
            echo "Qual valor deseja sacar: \n";
            $valorDeSaque = (float) fgets(STDIN);
@@ -34,6 +35,7 @@ $numero = (float) fgets(STDIN);
          echo "Saldo Insuficiente\n";
       }
     break;
+
     case 3:
            echo "Qual valor deseja depositar: \n";
            $valorDoDeposito = (float) fgets(STDIN);
@@ -43,13 +45,15 @@ $numero = (float) fgets(STDIN);
          echo "Deposito não permitido\n";
       }
       break;
+
       case 4:
              echo "Adeus ate logo!\n";
       break;
+
       default:
             echo "Opçao invalida\n";
-      break;               
+      break;
+
     }
 
 }while($numero != 4);
-
